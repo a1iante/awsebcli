@@ -1,11 +1,3 @@
-FROM alpine
+FROM python:2
 
-RUN apk --no-cache --update add \
-        bash \
-        git \
-        python3 \
-        py3-pip
-
-RUN pip install --upgrade \
-        awsebcli \
-        awscli
+RUN pip install --upgrade awsebcli awscli
